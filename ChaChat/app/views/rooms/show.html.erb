@@ -1,0 +1,13 @@
+<h1>Chat Room<%= @room.id %></h1>
+<div id='messages' data-room_id="<%= @room.id %>">
+  <%= render @messages %>
+</div>
+
+<hr>
+<%= label_tag :content, 'Say something' %><br>
+<%= text_field_tag :content, nil, data: { behavior: 'room_speaker' } %>
+
+<div class="f-container">
+  <div class="flex-primary"><%= link_to "戻る", root_path, class: 'btn btn-primary' %></div>
+  <div class="flex-danger"><%= link_to "削除", room_path, class: 'btn btn-danger', method: :delete %></div>
+</div>
