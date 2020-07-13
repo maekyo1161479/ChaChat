@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark", style="background-color:#aed265;">
-  <a class="navbar-brand" href="https://sajiblog.com/" target="_blank" >
-    <img src="/assets/saji.png" width="30" height="30" alt=""> ChaChat
-  </a>
-  <div class="navbar-nav">
-    <%if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete%>
-    <%end%>
-  </div>
+<nav class="navbar navbar-dark", style="background-color:#aed265;">
+  <a class="navbar-brand f-list" href="https://sajiblog.com/" target="_blank" >
+    <img class="f-left" src="/assets/saji.png" width="30" height="30" alt="">ChaChat</a>
+  <% if user_signed_in? %>
+    <ul class="f-list">
+      <li class="f-left"><%= current_user.email %></li>
+      <li class="f-right"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+    </ul>
+  <% end %>
 </nav>

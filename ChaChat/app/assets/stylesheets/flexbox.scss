@@ -7,3 +7,38 @@
 .flex-primary{
   margin-right: 5px;
 }
+
+.f-center{
+  display: flex;
+  align-items: center;
+}
+
+.f-list{
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.f-left{
+  margin-right: 15px;
+}
+
+.f-list a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 10px;
+}
+
+.f-list a:hover{
+ background-color: rgba(81, 136, 177, 0.8); 
+}
+
+.navbar{
+  padding: 0 16px;
+  height: 54px;
+}
