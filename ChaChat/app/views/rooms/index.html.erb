@@ -1,18 +1,17 @@
 <% if flash[:notice] %>
   <div class="alert alert-success"><%= flash[:notice] %></div>
 <% end %>
-
 <div class="d-flex align-items-center">
   <h1>部屋一覧</h1>
   <div class="ml-auto boards__linkBox">
     <%= link_to '新規ルーム作成', new_room_path, class: 'btn btn-outline-dark' %>
   </div>
 </div>
-
+<hr>
 <div>
   <ul>
     <% @rooms.each do |room| %>
-      <li><%= link_to "ROOM#{room.id}", room_path(room) %></li>
+      <li class="index-menu"><%= link_to "ROOM#{room.id}", room_path(room) %></li>
     <% end %>
   </ul>
 </div>

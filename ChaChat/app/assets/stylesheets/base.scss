@@ -1,8 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
 h1 {
-  margin: 15px 0;
+  font-size: 3rem;
+  
 }
 
-nav {
-  margin-bottom: 20px;
+h2 {
+  font-size: 2.5rem;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.f-box {
+  display: block;
+  box-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.title {
+   font-size: 25px;
+   padding: 15px 10px 10px 10px;
+   text-align: center;
+}
+
+// .title:hover{
+//   background-color: rgba(81, 136, 177, 0.8);
+// }
+
+.g-list li {
+  padding: 5px 15px;
+}
+
+// .g-list li:hover{
+//   background-color: rgba(81, 136, 177, 0.8);
+// }
+
+.g-list li > a {
+  width: 200px;
+  height: 32px
+}
+
+.index-menu {
+  list-style: none;
+}
+
+.index-menu  a {
+  color: skyblue;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+main > a {
+  color: skyblue;
+  display: inline-block;
+  padding: 5px;
+}
+
+.btn {
+  font-size: 17.5px;  
+  margin-bottom: 10px;
+}
+
+.side-list {
+  margin: 5px;
+}
+
+.side-footer {
+  height: 200px;
+  margin-top: auto;
+  border-top: 1px solid #1e1210;
+}
+
+.side-footer a {
+  margin:5px;
+}
+
+.alert {
+  font-size: 15px;
+}
+
+input {
+  margin: 5px;
+}

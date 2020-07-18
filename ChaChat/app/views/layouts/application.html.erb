@@ -7,12 +7,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/png" href="/assets/saji.png">
   </head>
 
   <body>
+    <input id="menu" type="checkbox">
+    <label for="menu" class="back"></label>
     <%= render 'header' %>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <%= render 'aside' %>
+      <main>
+        <%= yield %>
+      </main>
   </body>
 </html>
