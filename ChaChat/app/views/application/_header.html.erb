@@ -1,9 +1,5 @@
 <header>
-  <label for="menu" class="open">🍔</label>
-  <a class="f-box" href="https://sajiblog.com/" target="_blank" >
-    <img src="/assets/saji.png" width="30" height="30" alt="">
-    <div class="title">ChaChat</div>
-  </a>
+  <%= render 'nav-draw' %>
 </header>
 <ul class="g-list">
   <% if user_signed_in? %>

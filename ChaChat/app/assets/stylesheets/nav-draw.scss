@@ -2,20 +2,20 @@
   display:none;
 }
 
-input[type="checkbox"] {
+#menu[type="checkbox"] {
   position: absolute;
   left: -50vw;
 }
 
-input[type="checkbox"]:checked ~ aside {
+#menu[type="checkbox"]:checked ~ aside {
   left: 0;
   z-index: 10;
 }
 
-input[type="checkbox"]:checked ~ .back {
+#menu[type="checkbox"]:checked ~ .back {
   position: absolute;
   z-index: 9;
-  width: 100%;
+  width: 200%;
   height: 200%;
   background: rgba(0,0,0,0.8);
 }
@@ -23,6 +23,7 @@ input[type="checkbox"]:checked ~ .back {
 .open {
   padding: 10px;
   margin: 0;
+  height: 40px;
 }
 
 label {

@@ -1,4 +1,4 @@
-import consumer from "./consumer"
+import consumer from './consumer'
 
 $(function() {
   const chatChannel = consumer.subscriptions.create({ channel: "RoomChannel", room: $('#messages').data('room_id') }, {

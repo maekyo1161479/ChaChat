@@ -4,7 +4,6 @@ html {
 
 h1 {
   font-size: 3rem;
-  
 }
 
 h2 {
@@ -30,7 +29,7 @@ ul {
 }
 
 .title {
-   font-size: 25px;
+   font-size: 2.5rem;
    padding: 15px 10px 10px 10px;
    text-align: center;
 }
@@ -53,13 +52,16 @@ ul {
 }
 
 .index-menu {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.room-id {
   list-style: none;
 }
 
-.index-menu  a {
+.room-id a {
   color: skyblue;
-  display: inline-block;
-  padding-bottom: 5px;
 }
 
 main > a {
@@ -69,7 +71,7 @@ main > a {
 }
 
 .btn {
-  font-size: 17.5px;  
+  font-size: 1.75rem;  
   margin-bottom: 10px;
 }
 
@@ -78,7 +80,7 @@ main > a {
 }
 
 .side-footer {
-  height: 200px;
+  height: 20vh;
   margin-top: auto;
   border-top: 1px solid #1e1210;
 }
@@ -88,7 +90,8 @@ main > a {
 }
 
 .alert {
-  font-size: 15px;
+  font-size: 1.5rem;
+  display: inline-block;
 }
 
 input {

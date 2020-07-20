@@ -15,7 +15,7 @@ class RoomsController < ApplicationController
 
   def destroy
     @room.destroy
-    redirect_to root_path, flash: { notice: "「ルーム#{@room.id}」が削除されました" } 
+    redirect_to root_path, flash: { alert: "「ルーム#{@room.id}」が削除されました" } 
   end
 
   private
